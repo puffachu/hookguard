@@ -1,0 +1,42 @@
+{
+  "name": "hookguard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@9.2.0",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean && rm -rf dist",
+    "lint": "eslint packages/**/*.ts packages/*/{src,test}/**/*.ts",
+    "format:check": "prettier --check \"packages/**/*.{ts,json,md}\" \"docs/**/*.md\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "benchmark": "tsx packages/core/src/benchmark.ts",
+    "oracle:test": "forge test -r packages/oracle",
+    "start": "tsx packages/api/src/main.ts",
+    "monitor": "node scripts/monitor-workers.mjs",
+    "cli": "tsx packages/cli/src/index.ts"
+  },
+  "devDependencies": {
+    "@eslint/config-array": "0.19.2",
+    "@eslint/js": "9.9.1",
+    "@types/express": "4.17.21",
+    "@types/node": "20.14.15",
+    "@types/supertest": "6.0.2",
+    "@vitest/coverage-v8": "2.0.5",
+    "eslint": "9.9.1",
+    "prettier": "3.3.3",
+    "supertest": "7.0.0",
+    "tsx": "4.17.0",
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.6.0",
+    "vite-tsconfig-paths": "5.0.1",
+    "vitest": "2.0.5"
+  },
+  "dependencies": {
+    "express": "4.19.2",
+    "viem": "2.21.0",
+    "zod": "3.23.8"
+  }
+}

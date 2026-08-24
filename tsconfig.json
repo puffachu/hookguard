@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": ".",
+    "outDir": "dist",
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@hookguard/core/*": ["packages/core/src/*"],
+      "@hookguard/simulator/*": ["packages/simulator/src/*"],
+      "@hookguard/invariants/*": ["packages/invariants/src/*"]
+    }
+  },
+  "include": [
+    "packages/**/src/**/*.ts",
+    "scripts/**/*",
+    "packages/**/test/**/*.ts",
+    "tests/**/*.ts",
+    "examples/**/*.ts"
+  ]
+}

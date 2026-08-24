@@ -1,0 +1,22 @@
+{
+  "name": "@hookguard/core",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./chains.js": "./src/chains.ts",
+    "./oracle-client.js": "./src/oracle-client.ts",
+    "./rpc-client.js": "./src/rpc-client.ts",
+    "./generator.js": "./src/generator.ts",
+    "./hooks.js": "./src/hooks.ts",
+    "./pool-key.js": "./src/pool-key.ts",
+    "./v4-encoding.js": "./src/v4-encoding.ts",
+    "./v4-execution.js": "./src/v4-execution.ts",
+    "./v4-fork-executor.js": "./src/v4-fork-executor.ts",
+    "./hook-analysis.js": "./src/hook-analysis.ts",
+    "./live-validation.js": "./src/live-validation.ts",
+    "./orchestrator.js": "./src/orchestrator.ts",
+    "./deployment-monitor.js": "./src/deployment-monitor.ts",
+    "./replay.js": "./src/replay.ts"
+  }
+}

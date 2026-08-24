@@ -1,0 +1,11 @@
+{
+  "name": "@hookguard/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "hookguard": "src/index.ts"
+  },
+  "dependencies": {
+    "@hookguard/core": "*"
+  }
+}
